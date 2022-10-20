@@ -11,8 +11,6 @@ app.use(express.static("public"));
 
 dotenv.config({path: './config.env'})
 
-//const uriAtlas = "mongodb+srv://admin-cherry:test123@cluster0.fgn1xaz.mongodb.net/?retryWrites=true"
-
 const DB = process.env.DATABASE.replace(
    '<PASSWORD>',
    process.env.DATABASE_PASSWORD
